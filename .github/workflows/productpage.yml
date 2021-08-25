@@ -30,7 +30,7 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/Pungpeee/bookinfo-productpage
+          tags: ghcr.io/pungpeee/bookinfo-productpage
         
   deploy:
       runs-on: ubuntu-latest
