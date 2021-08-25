@@ -45,9 +45,9 @@ jobs:
             password: ${{ secrets.PASSWORD }}
             script: |
                docker pull ghcr.io/pungpeee/bookinfo-productpage:latest
-               docker build -t ghcr.io/Pungpeee/bookinfo-productpage:latest
+               docker build -t ghcr.io/pungpeee/bookinfo-productpage:latest
                docker images
-               docker run -d -p 80:80 ghcr.io/Pungpeee/bookinfo-productpage:latest
+               docker run -d -p 80:80 ghcr.io/pungpeee/bookinfo-productpage:latest
                docker ps -a
                
     
