@@ -30,7 +30,7 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/pungpeee/bookinfo-productpage
+          tags: ghcr.io/pungpeee/bookinfo-productpage:latest
         
   deploy:
       needs: build
@@ -44,7 +44,7 @@ jobs:
             username: Pungpeee
             password: ${{ secrets.PASSWORD }}
             scripts: |
-               docker pull ghcr.io/Pungpeee/bookinfo-productpage
+               docker pull ghcr.io/pungpeee/bookinfo-productpage
                docker build -t ghcr.io/Pungpeee/bookinfo-productpage
                docker images
                docker ps -a
