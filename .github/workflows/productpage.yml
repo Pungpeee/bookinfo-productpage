@@ -46,7 +46,7 @@ jobs:
             script: |
                docker pull ghcr.io/pungpeee/bookinfo-productpage:latest
                docker build -t ghcr.io/pungpeee/bookinfo-productpage:latest
-               docker run -d -p 80:80 --network=bookinfo ghcr.io/pungpeee/bookinfo-productpage:latest
+               docker run -d -p 8082:8082 --network=bookinfo ghcr.io/pungpeee/bookinfo-productpage:latest
                
     
     
