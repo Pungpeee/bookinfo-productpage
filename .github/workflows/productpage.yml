@@ -45,4 +45,4 @@ jobs:
             password: ${{ secrets.PASSWORD }}
             script: |
                docker pull ghcr.io/pungpeee/bookinfo-productpage:latest
-               docker run -d -p 8082:80 --network=bookinfo ghcr.io/pungpeee/bookinfo-productpage:latest --name productpage
+               docker run --name productpage -d -p 8082:80 --network=bookinfo ghcr.io/pungpeee/bookinfo-productpage:latest
